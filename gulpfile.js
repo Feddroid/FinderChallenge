@@ -2,7 +2,7 @@ var gulp = require("gulp");
 var pug = require("gulp-pug");
 var stylus = require("gulp-stylus");
 var rupture = require("rupture");
-var browserSyncx = require("browser-sync");
+var browserSync = require("browser-sync");
 
 var pathsView = [
     "src/index.pug",
