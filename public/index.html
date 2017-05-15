@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Finder challenge</title>
+    <meta charset="utf-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet" type="text/css">
+    <link href="/vendor/pure/pure-min.css" rel="stylesheet">
+    <link href="/styles/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app pure-g">
+      <header class="pure-u-1">
+        <div class="pure-u-1-3">
+          <h1 class="logo">Finder challenge!</h1>
+        </div>
+        <div class="pure-u-7-24">
+          <div class="search-form">
+            <input type="text" name="search" id="search" onpaste="return false" oninput="this.value = this.value.replace (/[ \\ $ % / ]/, '');">
+            <input type="submit" value="Buscar" onclick="SearchForm()">
+          </div>
+        </div>
+        <div class="pure-u-1-3"></div>
+      </header>
+      <aside class="filters pure-u-1-4">
+        <h3>Búsquedas guardadas</h3>
+        <ul id="saved"></ul>
+        <h3>Categorías</h3>
+        <ul id="categories">
+          <li> <a class="button active" href="">Todos</a></li>
+        </ul>
+        <h3>Idioma</h3>
+        <ul id="lang">
+          <li> <a class="button active" href="">Todos                    </a></li>
+        </ul>
+        <h3>Publicación</h3>
+        <ul id="posts">
+          <li> <a class="button active" href="">Todos</a></li>
+          <li><a class="button" href="#">Hoy</a></li>
+          <li><a class="button" href="#">Hace una semana</a></li>
+          <li><a class="button" href="#">Hace un mes</a></li>
+          <li><a class="button" href="#">Hace un año</a></li>
+        </ul>
+        <h3>Presentación</h3>
+        <ul id="edition">                   </ul>
+      </aside>
+      <content class="pure-u-3-4">
+        <ul id="contentData"></ul>
+      </content>
+      <footer class="pure-u-1"></footer>
+    </div>
+    <script src="/vendor/underscore/underscore-min.js"></script>
+    <script src="/vendor/jquery/dist/jquery.js"></script>
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/search-form.js"></script>
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>

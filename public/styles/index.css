@@ -1,0 +1,42 @@
+* {
+  font-family: "Proxima Nova";
+}
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.search-form {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 650px) {
+  .search-form {
+    display: none;
+  }
+}
+/* Filtros */
+ul {
+  list-style: none;
+  margin: 0;
+}
+a {
+  text-decoration: underline;
+}
+.active {
+  text-decoration: none;
+  color: #000;
+}
+/* ids */
+#contentData {
+  padding: 0;
+}
+/* clases */
+.dataTables_info {
+  float: left;
+}
+.dataTables_paginate {
+  float: right;
+}
+.paginate_button {
+  padding: 0.5em 1em;
+  color: -webkit-link;
+}

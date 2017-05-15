@@ -17,13 +17,39 @@ html(lang="es")
                     include blocks/search-form
                 .pure-u-1-3
             aside.filters.pure-u-1-4
+                h3 Búsquedas guardadas
+                ul#saved
+                h3 Categorías
+                ul#categories
+                    li 
+                        a(class='button active' href="") Todos
+                h3 Idioma
+                ul#lang
+                    li 
+                        a(class='button active' href="") Todos                    
+                h3 Publicación
+                ul#posts
+                    li 
+                        a(class='button active' href="") Todos
+                    li
+                        a(class='button' href='#') Hoy
+                    li
+                        a(class='button' href="#") Hace una semana
+                    li
+                        a(class='button' href="#") Hace un mes
+                    li
+                        a(class='button' href="#") Hace un año
+                h3 Presentación
+                ul#edition                    
             content.pure-u-3-4
+                ul#contentData
             footer.pure-u-1
 
         //- third party libraries
         script(src="/vendor/underscore/underscore-min.js")
 
         //- app scripts self
+        script(src="/vendor/jquery/dist/jquery.js")
         script(src="/scripts/global.js")
         script(src="/scripts/search-form.js")
         script(src="/scripts/app.js")
